@@ -65,7 +65,7 @@
             </div>
 
             <div class="form-group">
-                <label for="gender">Gender</label>
+                <label for="gender" >Gender</label>
                 <select id="gender" name="gender">
                     <option value="null" selected>Optional</option>
                     <option value="other">Other</option>
@@ -169,7 +169,7 @@
             </div>
 
             <div class="form-group">
-                <label for="workout-frequency">Workout Frequency</label>
+                <label for="workout-frequency" aria-label="Workout Frequency per week">Workout Frequency</label>
                 <p>Per Week</p>
                 <input type="range" id="workout-frequency" name="workout-frequency" list="markers" min="0" max="12"
                     step="1">
@@ -222,21 +222,20 @@
                     <option value="lean">Get Lean</option>
                 </select>
             </div>
-                <fieldset class="radio-group">
-                    <label for="buddy">MyFitnessApp Buddy</label>
-                    <label for="buddy"><input type="radio" id="buddy" value="yes">Yes</label>
-                    <label for="buddy"><input type="radio" id="buddy" value="no">No</label>
-                </fieldset>
-            </div> -->
+            <fieldset class="radio-group">
+                <label for="buddy">MyFitnessApp Buddy</label>
+                <label for="buddy"><input type="radio" id="buddy" value="yes">Yes</label>
+                <label for="buddy"><input type="radio" id="buddy" value="no">No</label>
+            </fieldset>
 
             <!-- https://codepen.io/JiveDig/pen/jbdJXR -->
             <!-- TODO tjek om den rent faktisk virker. -->
             <div class="form-group">
                 <label for="buddy">MyFitnessApp Buddy</label>
                 <div class="switch-field">
-                    <input type="radio" id="radio-yes" name="buddy-option" value="yes" checked/>
+                    <input type="radio" id="radio-yes" name="buddy-option" value="yes" checked />
                     <label for="radio-yes">Yes</label>
-                    <input type="radio" id="radio-no" name="buddy-option" value=" no"/>
+                    <input type="radio" id="radio-no" name="buddy-option" value=" no" />
                     <label for="radio-no">No</label>
                 </div>
             </div>
