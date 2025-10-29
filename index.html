@@ -17,8 +17,8 @@
                 <p>Account Creation</p>
 
                 <div class="form-group">
-                    <button autofocus>Sign Up with Google</button>
-                    <button>Sign Up with Facebook</button>
+                    <button autofocus disabled>Sign Up with Google</button>
+                    <button disabled>Sign Up with Facebook</button>
                 </div>
             </header>
 
@@ -65,7 +65,7 @@
             </div>
 
             <div class="form-group">
-                <label for="gender" >Gender</label>
+                <label for="gender">Gender</label>
                 <select id="gender" name="gender">
                     <option value="null" selected>Optional</option>
                     <option value="other">Other</option>
@@ -169,8 +169,7 @@
             </div>
 
             <div class="form-group">
-                <label for="workout-frequency" aria-label="Workout Frequency per week">Workout Frequency</label>
-                <p>Per Week</p>
+                <label for="workout-frequency">Workout Frequency Per Week</label>
                 <input type="range" id="workout-frequency" name="workout-frequency" list="markers" min="0" max="12"
                     step="1">
                 <datalist id="markers">
@@ -216,17 +215,18 @@
             <div class="form-group">
                 <label for="goals">My Fitness Goals</label>
                 <select id="goals" name="goals">
-                    <option value="buffed" selected>Get Buffed</option>
+                    <option value="buffed">Get Buffed</option>
                     <option value="jacked">Get Jacked</option>
                     <option value="big">Get Big</option>
                     <option value="lean">Get Lean</option>
                 </select>
             </div>
-            <fieldset class="radio-group">
+
+            <!-- <fieldset class="radio-group">
                 <label for="buddy">MyFitnessApp Buddy</label>
-                <label for="buddy"><input type="radio" id="buddy" value="yes">Yes</label>
-                <label for="buddy"><input type="radio" id="buddy" value="no">No</label>
-            </fieldset>
+                <label for="radio-yes"><input type="radio" id="radio-yes" name="buddy-option" value="yes" checked />Yes</label>
+                <label for="radio-no"><input type="radio" id="radio-no" name="buddy-option" value=" no" />No</label>
+            </fieldset> -->
 
             <!-- https://codepen.io/JiveDig/pen/jbdJXR -->
             <!-- TODO tjek om den rent faktisk virker. -->

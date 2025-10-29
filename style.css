@@ -1,7 +1,14 @@
 :root {
-    --primary: hsl(211, 100%, 50%);
-    --valid: hsl(143, 100%, 26%);
-    --invalid: hsl(348, 55%, 49%);
+    --primary: oklch(0.75 0.10 255);
+    --valid: oklch(0.75 0.10 150);
+    --invalid: oklch(0.75 0.10 348);
+    --background1: oklch(0.1 0 0);
+    --background2: oklch(0.2 0 0);
+    --background3: oklch(0.4 0 0);
+    --background4: oklch(0.55 0 0);
+    --fontcolor1: oklch(0.9 0 0);
+    --fontcolor2: oklch(0.75 0 0);
+    color: var(--fontcolor1)
 }
 
 input,
@@ -9,36 +16,34 @@ button,
 select,
 textarea {
     font: inherit;
+    color: var(--fontcolor1);
+    background-color: var(--background3);
 }
 
+
+
+body,
 main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 1rem;
-    border-radius: 10px;
-    background-color: rgb(223, 234, 230);
+    background-color: var(--background1)
 }
 
 form {
-    /* display: flex;
-    flex-direction: column;
-    align-items: center; */
-
     display: grid;
-    border-radius: 10px;
+    border-radius: 8px;
     gap: 1rem;
-    margin: 1rem;
-    width: 320px;
-    background-color: rgb(184, 228, 228);
+    /* margin: 1rem; */
+    padding: 10px;
+    /* width: 340px; */
+    background-color: var(--background2)
 }
 
 header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    
-    /* padding: 10px; */
 }
 
 
@@ -47,12 +52,10 @@ header {
     display: flex;
     flex-direction: column;
     width: 300px;
-    margin: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
-
-/* TODO Stretch range slider to fill container */
-/* https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/input/range */
 
 .form-group datalist {
     display: flex;
@@ -67,17 +70,54 @@ header {
     padding: 0;
 }
 
+/* Stylish buttons */
+button {
+    background: linear-gradient(to right, #00c6ff, #0072ff);
+    /* Frisk blå gradient */
+    color: var(--fontcolor1);
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    margin-bottom: 0.2rem;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+input {
+    border-radius: 8px;
+    height: 1.3rem;
+}
+
+select {
+    border-radius: 8px;
+    height: 1.65rem;
+}
+
+textarea {
+    border-radius: 8px;
+}
+
 .form-group input[type="checkbox"] {
     margin-top: 10px;
     margin-bottom: 10px;
 }
 
-*/ input:not(:placeholder-shown):valid,
+input:focus {
+    color: var(--fontcolor1);
+    background-color: var(--background4);
+}
+
+input:not(:placeholder-shown):valid,
 select:not(:placeholder-shown):valid {
+    outline-offset: 2px;
     outline-color: var(--valid);
 }
 
 input:not(:placeholder-shown):invalid {
+    outline-offset: 2px;
     outline-color: var(--invalid);
 }
 
