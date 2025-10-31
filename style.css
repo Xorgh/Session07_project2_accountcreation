@@ -21,44 +21,62 @@ textarea {
 }
 
 
+body {
+    background-color: var(--background1)
+}
 
-body,
 main {
+    display: grid;
+    grid-template-areas:
+        "header"
+        "main";
+    border-radius: 8px;
+    margin: 20px;
+    justify-content: center;
+    background-color: var(--background2);
+}
+
+header {
+    grid-area: header;
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: var(--background1)
 }
 
 form {
     display: grid;
-    border-radius: 8px;
+    grid-area: main;
+    grid-template-areas:
+        "form-main"
+        "form-wide"
+        "form-footer";
     gap: 1rem;
-    /* margin: 1rem; */
     padding: 10px;
-    /* width: 340px; */
-    background-color: var(--background2);
-    line-height:2.5ch;
+    line-height: 2.5ch;
 }
 
-header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.form-container {
+    display: grid;
+    grid-area: form-main;
+    gap: 1rem;
 }
 
-h1 {
-    line-height: 0.5rem;
+footer {
+    grid-area: form-footer;
 }
 
 .form-group {
-    display: flex;
-    flex-direction: column;
-    width: 300px;
-    margin-left: 20px;
-    margin-right: 20px;
+    display: grid;
 }
 
+.form-group-wide {
+    display: grid;
+    grid-area: form-wide
+}
+
+.checkmarks {
+    display: grid;
+}
 
 .form-group datalist {
     display: flex;
@@ -66,7 +84,6 @@ h1 {
     align-items: center;
     justify-content: space-between;
     writing-mode: vertical-lr;
-    width: 300px;
 }
 
 .form-group option {
@@ -117,13 +134,23 @@ input:focus {
 
 input:not(:placeholder-shown):valid,
 select:not(:placeholder-shown):valid {
-    /* outline-offset: 2px; */
     outline-color: var(--valid);
 }
 
 input:not(:placeholder-shown):invalid {
-    /* outline-offset: 2px; */
     outline-color: var(--invalid);
 }
 
-/* https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/input/range */
+@media (width > 720px) {
+    .form-container {
+        grid-template-areas:
+            "form-main form-main"
+            "form-wide form-wide"
+            "form-footer form-footer";
+    }
+
+    .form-group-wide {
+        grid-area: form-wide;
+    }
+
+}

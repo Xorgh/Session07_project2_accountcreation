@@ -10,260 +10,258 @@
 
 <body>
     <main>
+        <header>
+            <h1>MyFitnessApp</h1>
+            <p>Account Creation</p>
 
-        <form action="" method="post">
-            <header>
-                <h1>MyFitnessApp</h1>
-                <p>Account Creation</p>
+            <div class="form-group">
+                <button autofocus disabled>Sign Up with Google</button>
+                <button disabled>Sign Up with Facebook</button>
+            </div>
+        </header>
+        <form action="TestPage.html" method="post">
+
+            <div class="form-container">
 
                 <div class="form-group">
-                    <button autofocus disabled>Sign Up with Google</button>
-                    <button disabled>Sign Up with Facebook</button>
-                </div>
-            </header>
-
-            <div class="form-group">
-                <label for="first-name">First Name</label>
-                <input type="text" id="first-name" name="first-name" placeholder="Type in your first name"
-                    autocapitalize="words" pattern="[A-Za-zÆØÅæøå\s\-]+" title="Kun bogstaver og mellemrum er tilladt"
-                    required>
-            </div>
-
-            <div class="form-group">
-                <label for="last-name">Last Name</label>
-                <input type="text" id="last-name" name="last-name" placeholder="Type in your last name"
-                    autocapitalize="words" pattern="[A-Za-zÆØÅæøå\s\-]+" title="Kun bogstaver og mellemrum er tilladt"
-                    required>
-            </div>
-
-            <div class="form-group">
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" placeholder="Type in your email" required>
-            </div>
-
-            <div class="form-group">
-                <label for="password">Password</label>
-                <input type="password" id="password" name="password" placeholder="Create a strong password"
-                    pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,}$"
-                    title="Minimum eight characters, at least one uppercase letter, one lowercase letter and one number:"
-                    required>
-            </div>
-
-            <!-- Kan confirm password check implementeres uden JS? -->
-            <div class="form-group">
-                <label for="confirm-password">Confirm Password</label>
-                <input type="password" id="confirm-password" placeholder="Confirm your password"
-                    pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,}$"
-                    title="Minimum eight characters, at least one uppercase letter, one lowercase letter and one number:"
-                    required>
-            </div>
-
-            <div class="form-group">
-                <label for="phone">Phone Number</label>
-                <input type="tel" id="phone" name="phone" placeholder="Type in your phone number" pattern="\d{8}"
-                    title="Ugyldigt telefonnummer!" required>
-            </div>
-
-            <div class="form-group">
-                <label for="gender">Gender</label>
-                <select id="gender" name="gender">
-                    <option value="null" selected>Optional</option>
-                    <option value="other">Other</option>
-                    <option value="female">Female</option>
-                    <option value="male">Male</option>
-                </select>
-            </div>
-
-            <div class="form-group">
-                <label for="age">Age</label>
-                <select id="age" name="age">
-                    <option value="null" selected>Optional</option>
-                    <option value="18">18</option>
-                    <option value="19">19</option>
-                    <option value="20">20</option>
-                    <option value="21">21</option>
-                    <option value="22">22</option>
-                    <option value="23">23</option>
-                    <option value="24">24</option>
-                    <option value="25">25</option>
-                    <option value="26">26</option>
-                    <option value="27">27</option>
-                    <option value="28">28</option>
-                    <option value="29">29</option>
-                    <option value="30">30</option>
-                    <option value="31">31</option>
-                    <option value="32">32</option>
-                    <option value="33">33</option>
-                    <option value="34">34</option>
-                    <option value="35">35</option>
-                    <option value="36">36</option>
-                    <option value="37">37</option>
-                    <option value="38">38</option>
-                    <option value="39">39</option>
-                    <option value="40">40</option>
-                    <option value="41">41</option>
-                    <option value="42">42</option>
-                    <option value="43">43</option>
-                    <option value="44">44</option>
-                    <option value="45">45</option>
-                    <option value="46">46</option>
-                    <option value="47">47</option>
-                    <option value="48">48</option>
-                    <option value="49">49</option>
-                    <option value="50">50</option>
-                    <option value="51">51</option>
-                    <option value="52">52</option>
-                    <option value="53">53</option>
-                    <option value="54">54</option>
-                    <option value="55">55</option>
-                    <option value="56">56</option>
-                    <option value="57">57</option>
-                    <option value="58">58</option>
-                    <option value="59">59</option>
-                    <option value="60">60</option>
-                    <option value="61">61</option>
-                    <option value="62">62</option>
-                    <option value="63">63</option>
-                    <option value="64">64</option>
-                    <option value="65">65</option>
-                    <option value="66">66</option>
-                    <option value="67">67</option>
-                    <option value="68">68</option>
-                    <option value="69">69</option>
-                    <option value="70">70</option>
-                    <option value="71">71</option>
-                    <option value="72">72</option>
-                    <option value="73">73</option>
-                    <option value="74">74</option>
-                    <option value="75">75</option>
-                    <option value="76">76</option>
-                    <option value="77">77</option>
-                    <option value="78">78</option>
-                    <option value="79">79</option>
-                    <option value="80">80</option>
-                    <option value="81">81</option>
-                    <option value="82">82</option>
-                    <option value="83">83</option>
-                    <option value="84">84</option>
-                    <option value="85">85</option>
-                    <option value="86">86</option>
-                    <option value="87">87</option>
-                    <option value="88">88</option>
-                    <option value="89">89</option>
-                    <option value="90">90</option>
-                    <option value="91">91</option>
-                    <option value="92">92</option>
-                    <option value="93">93</option>
-                    <option value="94">94</option>
-                    <option value="95">95</option>
-                    <option value="96">96</option>
-                    <option value="97">97</option>
-                    <option value="98">98</option>
-                    <option value="99">99</option>
-                </select>
-            </div>
-
-            <div class="form-group">
-                <label for="weight">Current Weight (Optional)</label>
-                <input type="number" id="weight" name="weight" placeholder="Type in your current weight">
-            </div>
-
-            <div class="form-group">
-                <label for="workout-frequency">Workout Frequency Per Week</label>
-                <input type="range" id="workout-frequency" name="workout-frequency" list="markers" min="0" max="12"
-                    step="1">
-                <datalist id="markers">
-                    <option value="0" label="0"></option>
-                    <option value="1" label="1"></option>
-                    <option value="2" label="2"></option>
-                    <option value="3" label="3"></option>
-                    <option value="4" label="4"></option>
-                    <option value="5" label="5"></option>
-                    <option value="6" label="6"></option>
-                    <option value="7" label="7"></option>
-                    <option value="8" label="8"></option>
-                    <option value="9" label="9"></option>
-                    <option value="10" label="10"></option>
-                    <option value="11" label="11"></option>
-                    <option value="12" label="12"></option>
-                </datalist>
-
-            </div>
-
-            <div class="form-group">
-                <label for="favorite-workouts">Favorite Workouts</label>
-
-                <div class="checkbox-group">
-                    <input type="checkbox" id="fav-bodybuilding" name="favorite-workouts[]" value="Bodybuilding">
-                    <label for="fav-bodybuilding">Bodybuilding</label>
-                </div>
-                <div class="checkbox-group">
-                    <input type="checkbox" id="fav-cycling" name="favorite-workouts[]" value="Cycling">
-                    <label for="fav-cycling">Cycling</label>
+                    <label for="first-name">First Name</label>
+                    <input type="text" id="first-name" name="first-name" placeholder="Type in your first name"
+                        autocapitalize="words" pattern="[A-Za-zÆØÅæøå\s\-]+"
+                        title="Kun bogstaver og mellemrum er tilladt" required>
                 </div>
 
-                <div class="checkbox-group">
-                    <input type="checkbox" id="fav-running" name="favorite-workouts[]" value="Running">
-                    <label for="fav-running"">Running</label>
+                <div class="form-group">
+                    <label for="last-name">Last Name</label>
+                    <input type="text" id="last-name" name="last-name" placeholder="Type in your last name"
+                        autocapitalize="words" pattern="[A-Za-zÆØÅæøå\s\-]+"
+                        title="Kun bogstaver og mellemrum er tilladt" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Type in your email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" placeholder="Create a strong password"
+                        pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,}$"
+                        title="Minimum eight characters, at least one uppercase letter, one lowercase letter and one number:"
+                        required>
+                </div>
+
+                <!-- Kan confirm password check implementeres uden JS? -->
+                <div class="form-group">
+                    <label for="confirm-password">Confirm Password</label>
+                    <input type="password" id="confirm-password" placeholder="Confirm your password"
+                        pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,}$"
+                        title="Minimum eight characters, at least one uppercase letter, one lowercase letter and one number:"
+                        required>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" placeholder="Type in your phone number" pattern="\d{8}"
+                        title="Ugyldigt telefonnummer!" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="gender">Gender</label>
+                    <select id="gender" name="gender">
+                        <option value="null" selected>Optional</option>
+                        <option value="other">Other</option>
+                        <option value="female">Female</option>
+                        <option value="male">Male</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="age">Age</label>
+                    <select id="age" name="age">
+                        <option value="null" selected>Optional</option>
+                        <option value="18">18</option>
+                        <option value="19">19</option>
+                        <option value="20">20</option>
+                        <option value="21">21</option>
+                        <option value="22">22</option>
+                        <option value="23">23</option>
+                        <option value="24">24</option>
+                        <option value="25">25</option>
+                        <option value="26">26</option>
+                        <option value="27">27</option>
+                        <option value="28">28</option>
+                        <option value="29">29</option>
+                        <option value="30">30</option>
+                        <option value="31">31</option>
+                        <option value="32">32</option>
+                        <option value="33">33</option>
+                        <option value="34">34</option>
+                        <option value="35">35</option>
+                        <option value="36">36</option>
+                        <option value="37">37</option>
+                        <option value="38">38</option>
+                        <option value="39">39</option>
+                        <option value="40">40</option>
+                        <option value="41">41</option>
+                        <option value="42">42</option>
+                        <option value="43">43</option>
+                        <option value="44">44</option>
+                        <option value="45">45</option>
+                        <option value="46">46</option>
+                        <option value="47">47</option>
+                        <option value="48">48</option>
+                        <option value="49">49</option>
+                        <option value="50">50</option>
+                        <option value="51">51</option>
+                        <option value="52">52</option>
+                        <option value="53">53</option>
+                        <option value="54">54</option>
+                        <option value="55">55</option>
+                        <option value="56">56</option>
+                        <option value="57">57</option>
+                        <option value="58">58</option>
+                        <option value="59">59</option>
+                        <option value="60">60</option>
+                        <option value="61">61</option>
+                        <option value="62">62</option>
+                        <option value="63">63</option>
+                        <option value="64">64</option>
+                        <option value="65">65</option>
+                        <option value="66">66</option>
+                        <option value="67">67</option>
+                        <option value="68">68</option>
+                        <option value="69">69</option>
+                        <option value="70">70</option>
+                        <option value="71">71</option>
+                        <option value="72">72</option>
+                        <option value="73">73</option>
+                        <option value="74">74</option>
+                        <option value="75">75</option>
+                        <option value="76">76</option>
+                        <option value="77">77</option>
+                        <option value="78">78</option>
+                        <option value="79">79</option>
+                        <option value="80">80</option>
+                        <option value="81">81</option>
+                        <option value="82">82</option>
+                        <option value="83">83</option>
+                        <option value="84">84</option>
+                        <option value="85">85</option>
+                        <option value="86">86</option>
+                        <option value="87">87</option>
+                        <option value="88">88</option>
+                        <option value="89">89</option>
+                        <option value="90">90</option>
+                        <option value="91">91</option>
+                        <option value="92">92</option>
+                        <option value="93">93</option>
+                        <option value="94">94</option>
+                        <option value="95">95</option>
+                        <option value="96">96</option>
+                        <option value="97">97</option>
+                        <option value="98">98</option>
+                        <option value="99">99</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="weight">Current Weight (Optional)</label>
+                    <input type="number" id="weight" name="weight" placeholder="Type in your current weight">
+                </div>
+
+                <div class="form-group">
+                    <label for="workout-frequency">Workout Frequency Per Week</label>
+                    <input type="range" id="workout-frequency" name="workout-frequency" list="markers" min="0" max="12"
+                        step="1">
+                    <datalist id="markers">
+                        <option value="0" label="0"></option>
+                        <option value="1" label="1"></option>
+                        <option value="2" label="2"></option>
+                        <option value="3" label="3"></option>
+                        <option value="4" label="4"></option>
+                        <option value="5" label="5"></option>
+                        <option value="6" label="6"></option>
+                        <option value="7" label="7"></option>
+                        <option value="8" label="8"></option>
+                        <option value="9" label="9"></option>
+                        <option value="10" label="10"></option>
+                        <option value="11" label="11"></option>
+                        <option value="12" label="12"></option>
+                    </datalist>
+
+                </div>
+
+                <div class="form-group">
+                    <label for="goals">My Fitness Goals</label>
+                    <select id="goals" name="goals">
+                        <option value="buffed">Get Buffed</option>
+                        <option value="jacked">Get Jacked</option>
+                        <option value="big">Get Big</option>
+                        <option value="lean">Get Lean</option>
+                    </select>
+                </div>
+
+                <!-- https://codepen.io/JiveDig/pen/jbdJXR -->
+                <!-- TODO tjek om den rent faktisk virker. -->
+                <div class="form-group">
+                    <label for="buddy">MyFitnessApp Buddy</label>
+                    <div class="switch-field">
+                        <input type="radio" id="radio-yes" name="buddy-option" value="yes" checked />
+                        <label for="radio-yes">Yes</label>
+                        <input type="radio" id="radio-no" name="buddy-option" value=" no" />
+                        <label for="radio-no">No</label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="profile-img">Profile Picture</label>
+                    <input type="file" id="profile-img" name="profile-img">
+                </div>
+
+            </div>
+            <div class="form-group-wide">
+                <div class="checkmarks">
+                    <label for="favorite-workouts">Favorite Workouts</label>
+
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="fav-bodybuilding" name="favorite-workouts[]" value="Bodybuilding">
+                        <label for="fav-bodybuilding">Bodybuilding</label>
+                    </div>
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="fav-cycling" name="favorite-workouts[]" value="Cycling">
+                        <label for="fav-cycling">Cycling</label>
+                    </div>
+
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="fav-running" name="favorite-workouts[]" value="Running">
+                        <label for="fav-running"">Running</label>
                 </div>
                 <div class=" checkbox-group">
-                        <input type="checkbox" id="fav-other" name="favorite-workouts[]" value="Other">
-                        <label for="fav-other">Other</label>
+                            <input type="checkbox" id="fav-other" name="favorite-workouts[]" value="Other">
+                            <label for="fav-other">Other</label>
+                    </div>
                 </div>
-            </div>
 
-            <div class="form-group">
-                <label for="goals">My Fitness Goals</label>
-                <select id="goals" name="goals">
-                    <option value="buffed">Get Buffed</option>
-                    <option value="jacked">Get Jacked</option>
-                    <option value="big">Get Big</option>
-                    <option value="lean">Get Lean</option>
-                </select>
-            </div>
-
-            <!-- <fieldset class="radio-group">
-                <label for="buddy">MyFitnessApp Buddy</label>
-                <label for="radio-yes"><input type="radio" id="radio-yes" name="buddy-option" value="yes" checked />Yes</label>
-                <label for="radio-no"><input type="radio" id="radio-no" name="buddy-option" value=" no" />No</label>
-            </fieldset> -->
-
-            <!-- https://codepen.io/JiveDig/pen/jbdJXR -->
-            <!-- TODO tjek om den rent faktisk virker. -->
-            <div class="form-group">
-                <label for="buddy">MyFitnessApp Buddy</label>
-                <div class="switch-field">
-                    <input type="radio" id="radio-yes" name="buddy-option" value="yes" checked />
-                    <label for="radio-yes">Yes</label>
-                    <input type="radio" id="radio-no" name="buddy-option" value=" no" />
-                    <label for="radio-no">No</label>
-                </div>
-            </div>
-
-            <div class="form-group">
-                <label for="profile-img">Profile Picture</label>
-                <input type="file" id="profile-img" name="profile-img">
-            </div>
-
-            <div class="form-group">
                 <label for="profile-bio">Profile Bio</label>
                 <textarea id="profile-bio" name="profile-bio" rows="5" cols="33"
                     placeholder="Type in a short profile description (optional)"></textarea>
             </div>
+            <footer>
+                <div class="form-group">
+                    <label for="terms">Terms & Conditions</label>
 
-            <div class="form-group">
-                <label for="terms">Terms & Conditions</label>
-
-                <div class="checkbox-group">
-                    <input type="checkbox" id="terms" name="terms" value="accepted" required>
-                    <label for="terms">I accept</label>
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="terms" name="terms" value="accepted" required>
+                        <label for="terms">I accept</label>
+                    </div>
                 </div>
-            </div>
 
-            <div class="form-group">
-                <button>Submit</button>
-            </div>
+                <div class="form-group">
+                    <button>Submit</button>
+                </div>
+            </footer>
         </form>
+
     </main>
 </body>
 
