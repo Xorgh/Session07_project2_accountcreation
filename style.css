@@ -152,6 +152,7 @@ input:not(:placeholder-shown):invalid {
     outline-color: var(--invalid);
 }
 
+
 @media (width > 720px) {
     .form-container {
         grid-template-areas:
